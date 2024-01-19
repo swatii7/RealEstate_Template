@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    color: var(--darkGray);
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-}
-
 :root{
     --gray:#D9D9D9;
     --darkGray: #687693;
@@ -409,15 +402,15 @@ body{
     padding: 120px 0px 95px;
 }
 
-.category-wrapper .card{
+.category-wrapper .category-card{
     padding: 20px;
     background-color: var(--lightBrown);
     border: none !important;
     border-radius: 0px !important;
-
+    margin: 0px auto;
 }
 
-.category-wrapper .card::before{
+.category-wrapper .category-card::before{
     position: absolute;
     content: '';
     bottom: 0;
@@ -429,28 +422,246 @@ body{
     transition: 0.6s;
 }
 
-.category-wrapper .card:hover:before{
+.category-wrapper .category-card:hover:before{
     width: 100%;
 }
 
-.category-wrapper .card .card-imageWrapper{
+.category-wrapper .category-card .card-imageWrapper{
     width: 90px;
     height: 90px;
     background-color: rgba(255, 255, 255, 0.81);
-    /* border-radius: 50px; */
-
 }
 
-.category-wrapper .card .card-title a{
+.category-wrapper .category-card .card-title a{
     font-size: 18px;
     text-decoration: none !important;
     color: var(--black) !important;
 }
 
-.category-wrapper .card .card-content span{
+.category-wrapper .category-card .card-content span{
     font-size: 14px;
     margin-top: 10px;
     color: var(--darkGray);
+}
+
+/* latest properties style */
+.properties-areaWrapper{
+    padding-bottom: 95px;
+}
+
+.properties-areaWrapper .area-heading{
+    margin-bottom: 40px;
+}
+
+.properties-areaWrapper .area-heading p{
+    color: var(--darkGray);
+    margin: 12px auto 0px;
+    max-width: 625px;
+}
+
+.property-option .property-tabsWrapper{
+    margin-bottom: 35px;
+}
+
+.property-option .property-tabsWrapper ul .property-tab{
+    margin-right: 20px;
+    list-style: none;
+}
+
+.property-option .property-tabsWrapper ul .property-tab a{
+    font-size: 14px;
+    color: var(--green);
+    background-color:  rgba(27, 111, 88, 0.1);
+    padding: 10px 22px;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.property-option .property-tabsWrapper ul .property-tab a.active{
+    background-color: var(--green);
+    color: var(--white) !important;
+}
+
+.property-option .property-tabsWrapper ul .property-tab:hover a{
+    background-color: var(--green);
+    color: var(--white) !important;
+}
+
+.property-card{
+    border-radius: 5px;
+    background-color: var(--offWhite)
+}
+
+.property-card img{
+    border-radius: 5px
+}
+
+.property-card .titleWrapper h3 a{
+    font-size: 20px;
+    color: var(--black);
+}
+
+.property-card .titleWrapper h3:hover a{
+    color: var(--green);
+}
+
+.property-card .titleWrapper span{
+    color: var(--darkGray);
+    font-size: 14px;
+    letter-spacing: 0.52px;
+    margin-top: 10px;
+}
+
+.card-price{
+    color: var(--green);
+}
+
+.property-card .property-content .cardOptionsWrapper{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.49);
+}
+
+.cardOptionsWrapper .ownerNameWrapper img{
+    max-width: 30px;
+    border: 2px solid var(--white);
+    box-shadow: 0px 4px 20px 0px rgba(84, 196, 217, 0.15);
+    margin-right: 10px;
+    transition: 0.6s;
+}
+
+.cardOptionsWrapper .ownerNameWrapper:hover img{
+    border: 2px solid var(--green);
+}
+
+.areaImgWrapper::before{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(2, 0, 0, 0) 64.3%, rgba(2, 0, 0, 0.5) 88.53%);
+}
+
+.featureWrapper{
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 10px;
+}
+
+.featureWrapper p{
+    color: var(--white);
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    margin-bottom: 12px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    transition: 0.6s;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.featureWrapper p:hover{
+    background-color: var(--brown);
+    border: 1px solid var(--brown);
+}
+
+.mediaWrapper{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+    
+}
+
+.badgeWrapper{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.badgeWrapper .mediaWrapper:hover{
+    background-color: var(--green);
+}
+
+.featureWrapper .mediaWrapper span{
+    margin-right: 12px;
+}
+
+.featureWrapper .mediaWrapper span:last-child{
+    margin-right: 0px;
+}
+
+.faciltyWrapper{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 20px 25px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.faciltyWrapper li{
+    margin-right: 25px;
+}
+
+.faciltyWrapper .icon{
+    background-color: var(--brown);
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    margin-right: 5px;
+}
+
+.faciltyWrapper .icon:hover{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+
+.faciltyWrapper span{
+    color: var(--white);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.cardOptionsWrapper .ownerNameWrapper span{
+    color: var(--darkGray);
+    font-size: 14px;
+    letter-spacing: 0.52px;
+}
+
+.cardOptionsWrapper .other-optionsWrapper .option_icon-wrapper {
+    color: var(--lightGray);
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--lightGray);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.6s;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardOptionsWrapper .other-optionsWrapper .option_icon-wrapper:hover{
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--white);
 }
 
 /* media query for large screen */
@@ -528,6 +739,10 @@ body{
 
     .hero-content-wrapper h1{
         font-size: 60px;
+    }
+
+    .category-wrapper .category-card .card-imageWrapper{
+        margin: 0px auto;
     }
 }
 
@@ -661,6 +876,10 @@ body{
 
     .info-tab .tabList .tabList-item .tab-option::before{
         width: 69px;
+    }
+
+    .category-wrapper .category-card .card-imageWrapper{
+        margin: 0px auto;
     }
 }
 
