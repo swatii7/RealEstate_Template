@@ -18,6 +18,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
     rel="stylesheet">
+    <!-- slick cdn -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
 <body>
@@ -1019,9 +1023,9 @@
       </div>
     </div>
     <div class="container-fluid position-relative">
-      <div class="d-flex">
-        <div class="first-slide slide" onclick="toggleActiveClass(0)">
-          <div class="properties-content">
+      <div class="d-block d-md-flex">
+        <div class="first-slide property-slide slide-active">
+          <div class="properties-content content-active">
             <div class="info d-flex justify-content-between align-items-center mb-4">
               <div class="mediaWrapper">
                 <span>
@@ -1044,11 +1048,11 @@
                 </button>
               </div>
             </div>
-            <div class="info-content mb-4">
+            <div class="info-content mb-md-4">
               <h3 class="fw-semibold font-josefin"><a href="#">Heritage Buildings</a></h3>
               <p class="font-inter">194 Mercer Street, NY 10012, USA</p>
             </div>
-            <ul class="d-flex align-items-center faciltyWrapper mb-4">
+            <ul class="d-flex align-items-center faciltyWrapper mb-md-4">
               <li class="d-flex align-items-center">
                 <div class="icon">
                   <img src="./assets/images/bed.png">
@@ -1085,7 +1089,7 @@
           </div>
         </div>
 
-        <div class="second-slide slide" onclick="toggleActiveClass(1)">
+        <div class="second-slide property-slide">
           <div class="properties-content">
             <div class="info d-flex justify-content-between align-items-center mb-4">
               <div class="mediaWrapper">
@@ -1150,7 +1154,7 @@
           </div>
         </div>
 
-        <div class="third-slide slide" onclick="toggleActiveClass(2)">
+        <div class="third-slide property-slide">
           <div class="properties-content">
             <div class="info d-flex justify-content-between align-items-center mb-4">
               <div class="mediaWrapper">
@@ -1215,7 +1219,7 @@
           </div>
         </div>
 
-        <div class="forth-slide slide" onclick="toggleActiveClass(3)">
+        <div class="forth-slide property-slide">
           <div class="properties-content">
             <div class="info d-flex justify-content-between align-items-center mb-4">
               <div class="mediaWrapper">
@@ -1284,6 +1288,438 @@
     
   </section>
 
+  <!-- property for sale section -->
+  <section class="forSale_wrapper">
+    <div class="container">
+      <div class="property-forSale_wrapper">
+        <div class="text-center forSale-content">
+          <h2 class="font-josefin fs-1 mb-0 fw-bold">Properties For Sale</h2>
+          <p class="font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris eget ornare venenatis, in. Pharetra iaculis consectetur.</p>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-6 col-xl-4 mb-4">
+            <div class="property-card">
+              <div class="position-relative areaImgWrapper">
+                <img src="./assets/images/properties7.jpg" class="card-img-top" alt="property-image">
+                <div class="featureWrapper">
+                  <p class="font-inter">Featured</p>
+                  <div class="mediaWrapper">
+                    <span>
+                      <i class="ri-vidicon-fill"></i>
+                    </span>
+                    <span class="font-inter"><i class="ri-image-line"></i>
+                    5</span>
+                  </div>
+                </div>
+                <div class="d-flex badgeWrapper">
+                  <p class="mediaWrapper">Apartment</p>
+                  <p class="mediaWrapper">For Sale</p>
+                </div>
+               <ul class="d-flex align-items-center faciltyWrapper">
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/bed.png">
+                  </div>
+                  <span class="fw-medium font-inter">6</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/bathroom.png">
+                  </div>
+                  <span class="fw-medium font-inter">4</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/parking.png">
+                  </div>
+                  <span class="fw-medium font-inter">1</span>
+                </li> <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/area.png">
+                  </div>
+                  <span class="fw-medium font-inter">3250</span>
+                </li>
+               </ul>
+              </div>
+             
+              <div class="property-content p-4">
+                <div class="d-flex justify-content-between">
+                  <div class="titleWrapper">
+                    <h3 class="card-title">
+                      <a href="#" class="font-josefin text-decoration-none fw-semibold">Heritage Buildings</a>
+                    </h3>
+                    <span class="font-inter">194 Mercer Street, NY 10012, USA</span>
+                  </div>
+                  <div class="card-price font-josefin fs-4 fw-semibold">$95,000</div>
+                </div>
+                <div class="cardOptionsWrapper d-flex align-items-center justify-content-between">
+                  <div class="ownerNameWrapper">
+                    <img src="./assets/images/user1.png" class="rounded-circle">
+                    <span class="font-inter">Thomas Klarck</span>
+                  </div>
+                  <div class="other-optionsWrapper">
+                    <a href="#" class="option_icon-wrapper text-decoration-none"><i class="ri-share-line"></i></a>
+                    <button type="button" class="option_icon-wrapper" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Add To Favorites">
+                      <i class="ri-heart-line"></i>
+                    </button>
+                    <button type="button" class="option_icon-wrapper" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Compare">
+                      <i class="ri-arrow-left-right-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second col -->
+          <div class="col-12 col-md-6 col-xl-4 mb-4">
+            <div class="property-card">
+              <div class="position-relative areaImgWrapper">
+                <img src="./assets/images/properties8.jpg" class="card-img-top" alt="property-image">
+                <div class="featureWrapper">
+                  <div class="mediaWrapper">
+                    <span>
+                      <i class="ri-vidicon-fill"></i>
+                    </span>
+                    <span class="font-inter"><i class="ri-image-line"></i>
+                    5</span>
+                  </div>
+                </div>
+                <div class="d-flex badgeWrapper">
+                  <p class="mediaWrapper">Apartment</p>
+                  <p class="mediaWrapper">For Sale</p>
+                </div>
+               <ul class="d-flex align-items-center faciltyWrapper">
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/bed.png">
+                  </div>
+                  <span class="fw-medium font-inter">6</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/bathroom.png">
+                  </div>
+                  <span class="fw-medium font-inter">4</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/parking.png">
+                  </div>
+                  <span class="fw-medium font-inter">1</span>
+                </li> <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/area.png">
+                  </div>
+                  <span class="fw-medium font-inter">3250</span>
+                </li>
+               </ul>
+              </div>
+             
+              <div class="property-content p-4">
+                <div class="d-flex justify-content-between">
+                  <div class="titleWrapper">
+                    <h3 class="card-title">
+                      <a href="#" class="font-josefin text-decoration-none fw-semibold">Beachfront Properties</a>
+                    </h3>
+                    <span class="font-inter">194 Mercer Street, NY 10012, USA</span>
+                  </div>
+                  <div class="card-price font-josefin fs-4 fw-semibold">$55,000</div>
+                </div>
+                <div class="cardOptionsWrapper d-flex align-items-center justify-content-between">
+                  <div class="ownerNameWrapper">
+                    <img src="./assets/images/user2.png" class="rounded-circle">
+                    <span class="font-inter">Walter White</span>
+                  </div>
+                  <div class="other-optionsWrapper">
+                    <a href="#" class="option_icon-wrapper text-decoration-none"><i class="ri-share-line"></i></a>
+                    <button type="button" class="option_icon-wrapper" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Add To Favorites">
+                      <i class="ri-heart-line"></i>
+                    </button>
+                    <button type="button" class="option_icon-wrapper" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Compare">
+                      <i class="ri-arrow-left-right-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- third col -->
+          <div class="col-12 col-md-6 col-xl-4 mb-4">
+            <div class="property-card">
+              <div class="position-relative areaImgWrapper">
+                <img src="./assets/images/properties2.jpg" class="card-img-top" alt="property-image">
+                <div class="featureWrapper">
+                  <p class="font-inter">Featured</p>
+                  <div class="mediaWrapper">
+                    <span>
+                      <i class="ri-vidicon-fill"></i>
+                    </span>
+                    <span class="font-inter"><i class="ri-image-line"></i>
+                    5</span>
+                  </div>
+                </div>
+                <div class="d-flex badgeWrapper">
+                  <p class="mediaWrapper">Apartment</p>
+                  <p class="mediaWrapper">For Sale</p>
+                </div>
+               <ul class="d-flex align-items-center faciltyWrapper">
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/bed.png">
+                  </div>
+                  <span class="fw-medium font-inter">6</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/bathroom.png">
+                  </div>
+                  <span class="fw-medium font-inter">4</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/parking.png">
+                  </div>
+                  <span class="fw-medium font-inter">1</span>
+                </li> <li class="d-flex align-items-center">
+                  <div class="icon">
+                    <img src="./assets/images/area.png">
+                  </div>
+                  <span class="fw-medium font-inter">3250</span>
+                </li>
+               </ul>
+              </div>
+             
+              <div class="property-content p-4">
+                <div class="d-flex justify-content-between">
+                  <div class="titleWrapper">
+                    <h3 class="card-title">
+                      <a href="#" class="font-josefin text-decoration-none fw-semibold">Single-Family Homes</a>
+                    </h3>
+                    <span class="font-inter">194 Mercer Street, NY 10012, USA</span>
+                  </div>
+                  <div class="card-price font-josefin fs-4 fw-semibold">$77,000</div>
+                </div>
+                <div class="cardOptionsWrapper d-flex align-items-center justify-content-between">
+                  <div class="ownerNameWrapper">
+                    <img src="./assets/images/user3.png" class="rounded-circle">
+                    <span class="font-inter">Jane Ronan</span>
+                  </div>
+                  <div class="other-optionsWrapper">
+                    <a href="#" class="option_icon-wrapper text-decoration-none"><i class="ri-share-line"></i></a>
+                    <button type="button" class="option_icon-wrapper" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Add To Favorites">
+                      <i class="ri-heart-line"></i>
+                    </button>
+                    <button type="button" class="option_icon-wrapper" data-bs-toggle="tooltip" data-bs-placement="top"
+                      data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Compare">
+                      <i class="ri-arrow-left-right-line"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="information-area">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-xl-6 text-center text-xl-start">
+            <span class="fw-medium info-badge text-center">
+              Exploring Unique Homes in the Real Estate Market
+          </span>
+          <h2 class="fw-bold font-josefin mb-0">Looking To Buy A Property?</h2>
+          </div>
+          <div class="col-12 col-xl-6">
+           <ul class="list-unstyled d-block d-md-flex text-center align-items-center justify-content-end">
+            <li class="d-flex align-items-center justify-content-center contact-info">
+              <i class="ri-phone-line fs-1 contact-icon"></i>
+              <a href="tel:00201068710594" class="text-decoration-none fw-medium font-josefin contact-text">+(002) 0106-8710-594</a>
+            </li>
+            <li>
+              <a href="#" class="premiumPropertyBtn font-josefin fw-semibold d-inline-flex align-items-center justify-content-center text-decoration-none">Find Premium Property</a>
+            </li>
+           </ul>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- real estate agent section -->
+  <section class="agent-detail_wrapper">
+    <div class="container pb-95">
+      <div class="text-center forSale-content">
+        <h2 class="font-josefin fs-1 mb-0 fw-bold">Real Estate Agents</h2>
+        <p class="font-inter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et mauris eget ornare venenatis, in. Pharetra iaculis consectetur.</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="detail-card position-relative mb-4">
+            <div class="agent-imgWrapper">
+              <a href="#">
+                <img src="./assets/images/agents1.jpg" alt="agent-img">
+              </a>
+            </div>
+            <div class="agent-content text-center">
+              <h3 class="font-josefin fw-bold">Christopher Baker</h3>
+              <span class="agent-designation font-inter">Residential Property Manager</span>
+              <div class="contact-links d-block d-md-flex align-items-center text-center justify-content-center position-relative">
+                <a href="#">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-youtube-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-pinterest-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="detail-card position-relative mb-4">
+            <div class="agent-imgWrapper">
+              <a href="#">
+                <img src="./assets/images/agents2.jpg" alt="agent-img">
+              </a>
+            </div>
+            <div class="agent-content text-center">
+              <h3 class="font-josefin fw-bold">Ryan Anderson</h3>
+              <span class="agent-designation font-inter">Residential Appraiser</span>
+              <div class="contact-links d-block d-md-flex align-items-center text-center justify-content-center position-relative">
+                <a href="#">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-youtube-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-pinterest-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="detail-card position-relative mb-4">
+            <div class="agent-imgWrapper">
+              <a href="#">
+                <img src="./assets/images/agents3.jpg" alt="agent-img">
+              </a>
+            </div>
+            <div class="agent-content text-center">
+              <h3 class="font-josefin fw-bold">Ashley Martin</h3>
+              <span class="agent-designation font-inter">Commercial Consultant</span>
+              <div class="contact-links d-block d-md-flex align-items-center text-center justify-content-center position-relative">
+                <a href="#">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-youtube-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-pinterest-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="detail-card position-relative mb-4">
+            <div class="agent-imgWrapper">
+              <a href="#">
+                <img src="./assets/images/agents4.jpg" alt="agent-img">
+              </a>
+            </div>
+            <div class="agent-content text-center">
+              <h3 class="font-josefin fw-bold">Brandon Mitchell</h3>
+              <span class="agent-designation font-inter">Construction Superintendent</span>
+              <div class="contact-links d-block d-md-flex align-items-center text-center justify-content-center position-relative">
+                <a href="#">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-youtube-line"></i>
+                </a>
+                <a href="#">
+                  <i class="ri-pinterest-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="swiper-slider_wrapper">
+            <div class="swiper-slider">
+              <div class="swiper-info">
+              <div class="image-wrapper">
+                <img src="./assets/images/user1.png" alt="user-img">
+              </div>
+              <div class="swiper-title">
+                <h3 class="font-josefin">Jordan Williams</h3>
+                <span>Commercial Property Manager</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -1291,6 +1727,9 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
   <script src="./assets/js/index.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>

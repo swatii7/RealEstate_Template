@@ -18,17 +18,45 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 // function to add class on click of slider
-var slides = document.querySelectorAll('.slide');
-var contents = document.querySelectorAll('.properties-content');
 
+function toggleItem(elem) {
+    // Set the first slide and its properties-content as active by default
+    elem[0].classList.add('slide-active');
+    var firstContentElement = elem[0].querySelector('.properties-content');
+    if (firstContentElement) {
+        firstContentElement.classList.add('content-active');
+    }
 
-function toggleActiveClass(clickedIndex) {
-    // Remove 'slide-active' class from all slides
-    slides.forEach(function (slide, index) {
-        if (index === clickedIndex) {
-            slide.classList.add('slide-active');
-        } else {
-            slide.classList.remove('slide-active');
-        }
-    });
+    for (var i = 0; i < elem.length; i++) {
+        elem[i].addEventListener("click", function(e) {
+            var current = this;
+            for (var i = 0; i < elem.length; i++) {
+                if (current != elem[i]) {
+                    elem[i].classList.remove('slide-active');
+                    var contentElement = elem[i].querySelector('.properties-content');
+                    if (contentElement) {
+                        contentElement.classList.remove('content-active');
+                    }
+                } else if (current.classList.contains('slide-active') === true) {
+                    current.classList.remove('slide-active');
+                    var contentElement = current.querySelector('.properties-content');
+                    if (contentElement) {
+                        contentElement.classList.remove('content-active');
+                    }
+                } else {
+                    current.classList.add('slide-active');
+                    var contentElement = current.querySelector('.properties-content');
+                    if (contentElement) {
+                        contentElement.classList.add('content-active');
+                    }
+                }
+            }
+            e.preventDefault();
+        });
+    }
 }
+
+toggleItem(document.querySelectorAll('.property-slide'));
+
+
+
