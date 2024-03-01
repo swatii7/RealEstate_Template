@@ -273,7 +273,7 @@
     background-color: var(--lightGray);
     right: 0;
     top: 6px;
-  }
+}
 
 
 .info-tab .tabList .tabList-item .tab-option{
@@ -411,7 +411,6 @@
     position: absolute;
     top: 0px;
     right: 50px;
-se
 }
 
 .category-wrapper .category-card{
@@ -680,18 +679,22 @@ se
 
 .propertySectionWrapper .sell-property_wrapper .container-fluid{
     padding-left: 0px !important;
-   padding-right: calc((100% - 1320px) / 2);
+    padding-right: calc((100% - 1320px) / 2);
 }
 
 .sell-property_wrapper .real_estate-img{
     object-fit: contain;
     max-width: 1017px;
     margin-left: -79px;
-    float: right;
 }
 
 .sell-property_wrapper .sell-area_content{
     padding: 100px 0px 100px 70px;
+}
+
+.rental_estate-img{
+    max-width: 934px !important;
+    margin-left: -20px;
 }
 
 .sell-property_wrapper .sell-area_content .sell-badge, .rental-area_content .sell-badge{
@@ -816,7 +819,7 @@ se
 
 .featured-property_wrapper .first-slide{
     background-image: url(/assets/images/propertiesOne.jpg);
-   margin-left: 0px;
+    margin-left: 0px;
 }
 
 .featured-property_wrapper .second-slide{
@@ -1064,12 +1067,36 @@ se
     padding-right: 0px;
 }
 
+.agent-detail_wrapper .testimonial-wrapper .testimonial-slide_Wrapper{
+    height: 100%;
+    width: 100%;
+    transition-property: transform;
+    transition-duration: 0ms;
+    /* transform: translate3d(-3248px, 0px, 0px); */
+    transition-delay: 0ms;
+}
+
+.agent-detail_wrapper .testimonial-wrapper .testimonial-slide_Wrapper .slick-active{
+    background-color: var(--green);
+}
+
+.testimonial-slide_Wrapper .slick-active .swiper-title h3,
+.testimonial-slide_Wrapper .slick-active .property-description{
+    color: var(--white);
+}
+
+.testimonial-slide_Wrapper .slick-active .agent-designation{
+    color: var(--lightGray);
+}
+
 .agent-detail_wrapper .testimonial-wrapper .swiper-slider{
     padding: 50px;
     border-radius: 5px;
     background-color: #F9F7F4;
     width: 903px;
     margin-right: 25px;
+    backface-visibility: hidden;
+    flex-shrink: 0;
 }
 
 .swiper-slider::before {
@@ -1114,10 +1141,29 @@ margin-right: 7px;
     color: var(--darkGray);
 }
 
-.article-img_wrapper img{
+.article-detail_wrapper img{
     width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.article-detail_wrapper{
+    background-color: #F7F8F9;
+    border-radius: 5px;
+}
+
+.article-detail_wrapper .tagName{
+    top: 10px;
+    left: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 14px;
+}
+
+.article-card-wrapper .article-cardDetail svg{
+    width: 18px;
 }
 
 /* media query for large screen */
@@ -1164,7 +1210,7 @@ margin-right: 7px;
 
        /* navbar css */
 
-       .navbar .container-fluid {
+        .navbar .container-fluid {
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -1354,7 +1400,7 @@ margin-right: 7px;
 
        /* navbar css */
 
-       .navbar .container-fluid {
+        .navbar .container-fluid {
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -1450,7 +1496,7 @@ margin-right: 7px;
 
         .featured-property_wrapper .property-slide{
             height: 400px;
-           margin: 0px 0px 25px 0px !important
+            margin: 0px 0px 25px 0px !important
         }
 
         .featured-property_wrapper .property-slide .properties-content{
