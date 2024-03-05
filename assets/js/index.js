@@ -59,18 +59,18 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '450px',
         slidesToShow: 1,
-        slideToScroll: 6,
+        slideToScroll: 1,
         dots: false,
         arrows:false,
         autoplay: true,
         autoplaySpeed: 1000,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1024,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '0px',
                     slidesToShow: 1
                 }
             },
@@ -79,7 +79,7 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '0px',
                     slidesToShow: 1
                 }
             }
@@ -93,19 +93,24 @@ $(document).ready(function(){
 
 const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".downIcon-wrapper",
-      start: "top top",
-      end: "+=1000",
-      scrub: true,
-      pin: true,
-      markers: false,
-      pinSpacing: false
+    trigger: ".downIcon-wrapper",
+    start: "top top",
+    end: "+=1000",
+    scrub: true,
+    pin: true,
+    markers: false,
+    pinSpacing: false
 
     }
-  });
-  tl.to(".downArrow", {yPercent: 350, duration: 1})
-  tl.to(".downArrow", {rotation: 180, duration: 3})
+});
 
+function shouldRunAnimation() {
+    return window.innerWidth > 768; // Adjust this value according to your screen size threshold
+}
 
-  gsap.fromTo(".real_estate-img", {x: -900, duration: 6}, {x: 0, duration: 6})
-  gsap.fromTo(".rental_estate-img", {x: 900, duration: 6}, {x: 0, duration: 6})
+if(shouldRunAnimation()){
+    tl.to(".downArrow", {yPercent: 350, duration: 1})
+    tl.to(".downArrow", {rotation: 180, duration: 3})
+    gsap.fromTo(".real_estate-img", {x: -900, duration: 6}, {x: 0, duration: 6})
+    gsap.fromTo(".rental_estate-img", {x: 900, duration: 6}, {x: 0, duration: 6})
+}

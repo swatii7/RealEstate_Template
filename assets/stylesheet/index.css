@@ -51,7 +51,9 @@
     text-decoration: none;
     margin-right: 20px;
 }
-
+.nav-socialLik-wrapper:hover i{
+fill: var(--green);
+}
 .social-links a:last-child{
     margin-right: 0px;
 }
@@ -1150,8 +1152,8 @@ margin-right: 7px;
 .article-detail_wrapper{
     background-color: #F7F8F9;
     border-radius: 5px;
+    transition: 0.6s;
 }
-
 .article-detail_wrapper .tagName{
     top: 10px;
     left: 10px;
@@ -1160,10 +1162,100 @@ margin-right: 7px;
     border-radius: 5px;
     padding: 2px 10px;
     font-size: 14px;
+    transition: 0.6s;
+}
+.article-detail_wrapper:hover .tagName,
+.article-detail_wrapper:hover .article_user_img
+{
+    background-color: var(--green);
+    border-color: var(--green);
+}
+.article-detail_wrapper:hover .article_cardHeading a{
+    color: var(--green);
 }
 
-.article-card-wrapper .article-cardDetail svg{
+.article-card-wrapper .list-artical-detail svg{
+    width: 22px;
+    padding-right: 5px;
+}
+.article_user_img{
+    top: 57%;
+    right: 15px;
+    max-width: 34px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.article-cardDetail{
+    margin-bottom: 18px;
+}
+.article-cardDetail .list-artical-detail{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--darkGray);
+    letter-spacing: 0.5px;
+    margin-right: 55px;
+}
+.article-cardDetail .article-options_wrapper::before{
+    position: absolute;
+    content: '';
+    height: 7px;
+    width: 7px;
+    border-radius: 50px;
+    background-color: var(--green);
+    right: -28px;
+    top: 33%;
+}
+.article_cardHeading a{
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* footer style */
+.page-footer{
+    background-color: var(--black);
+    padding-top: 120px;
+}
+.footer-desc p{
+    color: #DAE8F0;
+    line-height: 1.8;
+}
+.footer-links-wrapper{
+    margin-right: 20px;
+}
+.footer-links-wrapper a svg{
     width: 18px;
+    fill: var(--brown);
+    transition: 0.6s;
+}
+.footer-links-wrapper a svg:hover{
+    fill: var(--green);
+}
+.footer-links a{
+    color: #DAE8F0;
+}
+.footer-links a:hover{
+    color: var(--green);
+}
+.footer-links a::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--green);
+    left: 0;
+    bottom: 0;
+    transition: 0.6s;
+}
+.footer-links a:hover:before{
+    width: 100%;
+}
+.footer-links{
+    color: #DAE8F0;
+    font-size: 15px;
+}
+.footer-links span{
+    color: var(--brown);
 }
 
 /* media query for large screen */
@@ -1367,6 +1459,24 @@ margin-right: 7px;
     .agent-detail_wrapper .agent-imgWrapper img{
         max-width: 286px;
     }
+    .sell-property_wrapper .real_estate-img,
+    .rental_estate-img{
+        max-width: 100% !important;
+        margin-left: 0px;
+    }
+    .maxWidth{
+        max-width: 580px;
+    }
+    .client-review_wrapper .review-wrapper h3{
+        font-size: 35px;
+        margin-bottom: 2px;
+    }
+    .client-review_wrapper .review-wrapper p{
+        font-size: 15px;
+    }
+    .pb-95{
+        padding-bottom: 75px !important;
+    }
 }
 
 /* media query for small screen */
@@ -1556,20 +1666,52 @@ margin-right: 7px;
         .agent-detail_wrapper .agent-imgWrapper img{
             max-width: 300px;
         }
+        .sell-property_wrapper .real_estate-img{
+            max-width: 100%;
+            margin-left: 0px !important;
+        }
+        .rental_estate-img{
+            max-width: 100% !important;
+            margin-left: 0px !important;
+        }
+        .properties-areaWrapper{
+            padding-bottom: 50px;
+        }
+        .sell-area_content h2{
+            font-size: 30px !important;
+        }
+        .agent-detail_wrapper .testimonial-wrapper .swiper-slider{
+            padding: 25px;
+        }
+        .swiper-info .image-wrapper img{
+            width: 50px;
+            height: 50px;
+        }
+        .swiper-slider::before{
+            display: none;
+        }
+        .agent-designation{
+            font-size: 12px;
+            margin-top: 0px;
+        }
+        .property-description{
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        .pb-95{
+            padding-bottom: 25px !important;
+        }
+        .agent-detail_wrapper{
+            padding-bottom: 50px;
+        }
+        .aricleWrapper{
+            margin-bottom: 30px;
+        }
+        .article-cardDetail .list-artical-detail{
+            margin-right: 39px;
+        }
+        .article-cardDetail .article-options_wrapper::before{
+            right: -18px;
+        }
 }
-
-/* 
-body{
-    height: 1000vh;
-}
-
-
-.gsap-animatedBtn{
-    background-color: red;
-    color: black;
-    height: 100px;
-    width: 100px;
-    border: 2px solid red;
-    margin: 20px 0px 0px;
-} */
 
