@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Andora-Real Estate</title>
   <link href="./assets/stylesheet/index.css" rel="stylesheet">
+  <link href="./assets/stylesheet/header.css" rel="stylesheet">
   <!-- boottsrap cdn -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -24,139 +24,12 @@
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <!-- animate css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
 </head>
-
-<body>
-  <header class="header">
-    <div class="top-header d-flex align-items-center">
-      <div class="container-fluid">
-        <div class="row d-flex align-items-center">
-          <div class="col-12 col-md-7">
-            <div class="d-block d-md-flex social-link-wrapper position-relative text-center">
-              <div class="social-links d-block d-md-flex align-items-center text-center ms-1 me-lg-5 position-relative">
-                <a href="#" class="nav-socialLik-wrapper">
-                  <i class="ri-facebook-fill"></i>
-                </a>
-                <a href="#" class="nav-socialLik-wrapper">
-                  <i class="ri-twitter-x-line"></i>
-                </a>
-                <a href="#" class="nav-socialLik-wrapper">
-                  <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="#" class="nav-socialLik-wrapper">
-                  <i class="ri-linkedin-fill"></i>
-                </a>
-                <a href="#" class="nav-socialLik-wrapper">
-                  <i class="ri-youtube-line"></i>
-                </a>
-                <a href="#" class="nav-socialLik-wrapper">
-                  <i class="ri-pinterest-line"></i>
-                </a>
-              </div>
-              <div class="mail-info-wrapper d-block d-md-flex align-items-md-center">
-                <i class="ri-mail-line"></i>
-                <a href="mailto:support@demo.com" class="text-decoration-none font-josefin">support@demo.com</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-5 text-center text-md-end">
-            <div class="call-info-wrapper d-inline-flex align-items-center">
-              <i class="ri-phone-line me-2"></i>
-              <a href="tel:00201068710594" class="text-decoration-none fw-medium font-josefin">+(002) 0106-8710-594</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-xl" id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/images/logo.png" alt="logo">
-        </a>
-        <div class="search_form_wrapper position-relative d-none d-md-flex">
-          <input type="search" placeholder="Search property" class="searchInputField">
-          <button class="searchBtn">
-            <i class="ri-search-line"></i>
-          </button>
-        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item position-relative">
-              <a class="nav-link active" aria-current="page" href="#">
-                Home
-                <i class="ri-arrow-drop-down-line"></i>
-              </a>
-              <!-- <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action active">Main Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Real Estate Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Commercial Real Estate</a>
-                </div> -->
-            </li>
-
-            <li class="nav-item position-relative">
-              <a class="nav-link" aria-current="page" href="#">
-                Pages
-                <i class="ri-arrow-drop-down-line"></i>
-              </a>
-              <!-- <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action active">Main Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Real Estate Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Commercial Real Estate</a>
-                </div> -->
-            </li>
-
-            <li class="nav-item position-relative">
-              <a class="nav-link" aria-current="page" href="#">
-                Property
-                <i class="ri-arrow-drop-down-line"></i>
-              </a>
-              <!-- <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action active">Main Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Real Estate Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Commercial Real Estate</a>
-                </div> -->
-            </li>
-
-            <li class="nav-item position-relative">
-              <a class="nav-link" aria-current="page" href="#">
-                Blog
-                <i class="ri-arrow-drop-down-line"></i>
-              </a>
-              <!-- <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action active">Main Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Real Estate Demo</a>
-                  <a href="#" class="list-group-item list-group-item-action">Commercial Real Estate</a>
-                </div> -->
-            </li>
-
-            <li class="nav-item position-relative">
-              <a class="nav-link" aria-current="page" href="#">
-                Contact Us
-              </a>
-            </li>
-
-          </ul>
-          <div class="more-links position-relative d-block d-xl-flex">
-            <div class="loginLinkWrapper">
-              <a href="#" class="text-decoration-none fw-semibold font-josefin">Log In / Register</a>
-            </div>
-            <div class="contact-wrapper">
-              <a href="#" class="text-decoration-none fw-semibold font-josefin">Contact Us</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
+<body class="page-1">
+<div id="header" class="header"></div>
+<!-- <include src="./header.html"></include> -->
   <!-- hero-section  -->
-  <section class="hero-section">
+  <section id="hero-section">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-xl-6">
@@ -279,6 +152,7 @@
             </button>
           </div>
         </div>
+      </div>
       </div>
   </section>
 
@@ -2178,7 +2052,7 @@
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col-3 footer-desc">
+        <div class="col-12 col-lg-3 footer-desc">
             <a href="#">
               <img src="./assets/images/light-logo.png" alt="company logo" class="mb-4">
             </a>
@@ -2216,10 +2090,10 @@
               </li>
             </ul>
           </div>
-        <div class="col-9">
+        <div class="col-12 col-lg-9">
           <div class="row">
-            <div class="col-3">
-              <div class="ps-3">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="ps-3 mb-4 mb-lg-0">
                 <h3 class="text-light font-josefin fs-5 fw-semibold mb-4">Company</h3>
                 <ul class="list-unstyled">
                   <li class="mb-3 footer-links">
@@ -2243,8 +2117,8 @@
               </div>
              
             </div>
-            <div class="col-3">
-              <div class="ps-3">
+            <div class="col-12 col-sm-6 col-lg-3"">
+              <div class="ps-3 mb-4 mb-lg-0">
                 <h3 class="text-light font-josefin fs-5 fw-semibold mb-4">Resources</h3>
                 <ul class="list-unstyled">
                   <li class="mb-3 footer-links">
@@ -2267,8 +2141,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-3">
-            <div class="ps-3">
+            <div class="col-12 col-sm-6 col-lg-3"">
+            <div class="ps-3 mb-4 mb-lg-0">
               <h3 class="text-light font-josefin fs-5 fw-semibold mb-4">Quick Links</h3>
               <ul class="list-unstyled">
                 <li class="mb-3 footer-links">
@@ -2291,8 +2165,8 @@
               </ul>
             </div>
           </div>
-            <div class="col-3">
-              <div class="ps-3">
+            <div class="col-12 col-sm-6 col-lg-3"">
+              <div class="ps-3 mb-4 mb-lg-0">
                 <h3 class="text-light font-josefin fs-5 fw-semibold mb-4">Contact Info</h3>
                 <ul class="list-unstyled">
                   <li class="mb-3 footer-links">
@@ -2321,9 +2195,17 @@
           </div>
         </div>
       </div>
+      <div class="copy-right-wrapper text-center">
+        <p class="font-josefin">Copyright
+          <span class="fw-semibold">Andora</span>
+          All Rights Reserved by 
+          <a href="https://envytheme.com/" target="_blank" class="text-decoration-none copyRightLink position-relative">EnvyTheme</a>
+        </p>
+      </div>
     </div>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -2332,12 +2214,11 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="./assets/js/index.js"></script>
 
-
+  <script type="text/javascript">
+    $('#header').load('header.html')
+  </script>
 </body>
 
 </html>

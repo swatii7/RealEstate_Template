@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate</title>
+  <link href="../assets/stylesheet/header.css" rel="stylesheet">
+  <link href="/assets/stylesheet/realEstate.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- boottsrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- font awsome cdn -->
+  <script src="https://kit.fontawesome.com/5d18c2c7a8.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- slick cdn -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div id="header" class="header"></div>
+  <section id="real_estate_hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-12 col-xl-6">
+          <div class="hero-content-wrapper position-relative">
+            <span class="hero-badge fw-mediumfont-inter animate__animated animate__fadeInUp animate__slower 2s">Tales
+              From The Real Estate Frontier</span>
+            <h1 class="font-josefin mt-4 text-light fw-bold animate__animated animate__fadeInUp animate__slower 2s">
+              Exploring Unique Homes In Market</h1>
+            <div class="tabWrapper">
+              <div class="info-tab animate__animated animate__fadeInUp animate__slower 3s">
+                <ul class="tabList d-flex list-unstyled">
+                  <li class="tabList-item position-relative">
+                    <a class="fw-bold text-decoration-none font-josefin position-relative tab-option active">Sell</a>
+                  </li>
+                  <li class="tabList-item position-relative">
+                    <a class="fw-bold text-decoration-none font-josefin position-relative tab-option">Rent</a>
+                  </li>
+                  <li class="tabList-item position-relative">
+                    <a class="fw-bold text-decoration-none font-josefin position-relative tab-option">Invest</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="search-content animate__animated animate__fadeInUp animate__slower 4s">
+                <div class="search-formWrapper">
+                  <form>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="selectOption mt-4">
+                          <label class="form-label fw-medium font-josefin d-block">Looking For</label>
+                          <select class="form-control form-select" aria-label="Default select example">
+                            <option selected>Property type</option>
+                            <option value="1">Multifamily</option>
+                            <option value="2">Detached house</option>
+                            <option value="3">Industrial</option>
+                            <option value="4">Townhouse</option>
+                            <option value="5">Apartment</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6">
+                        <div class="selectOption mt-4">
+                          <label class="form-label fw-medium font-josefin d-block">Location</label>
+                          <select class="form-control form-select" aria-label="Default select example">
+                            <option selected>All cities</option>
+                            <option value="1">Liverpool</option>
+                            <option value="2">Bristol</option>
+                            <option value="3">Nottingham</option>
+                            <option value="4">Leicester</option>
+                            <option value="5">Coventry</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="selectOption mt-4">
+                          <label class="form-label fw-medium font-josefin d-block">Your Price</label>
+                          <input type="text" name="max-price" placeholder="Max price" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 d-flex align-items-center position-relative">
+                        <div class="mt-4 form-group w-100">
+                          <button class="search-btn font-josefin fw-semibold ">
+                            <i class="ri-search-line"></i>
+                            Search Property
+                          </button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <section class="pt-120 pb-95 whyChoose-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <span class="hero-badge fw-medium font-inter animate__animated animate__fadeInUp animate__slower 2s">Bricks
+            And Clicks</span>
+          <h2 class="font-josefin mb-0 fs-1 fw-bold position-relative">Why Choose Andora?</h2>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="whyChooseUs-content">
+            <div class="content-imgWrapper mb-4 p">
+              <img src="/assets/images/why-choose1.png" alt="imageOne">
+            </div>
+            <h3 class="content-Heading font-josefin fw-medium">Historic Properties</h3>
+            <p class="content-desc font-inter fs-6 fw-normal">Fusce aliquet quam eget neque ultrices elementum felis id
+              arcu blandit sagittis.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="whyChooseUs-content">
+            <div class="content-imgWrapper mb-4 p">
+              <img src="/assets/images/why-choose2.png" alt="imageTwo">
+            </div>
+            <h3 class="content-Heading font-josefin fw-medium">Furniture Includes</h3>
+            <p class="content-desc font-inter fs-6 fw-normal">Fusce aliquet quam eget neque ultrices elementum felis id
+              arcu blandit sagittis.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="whyChooseUs-content">
+            <div class="content-imgWrapper mb-4 p">
+              <img src="/assets/images/why-choose3.png" alt="imageThree">
+            </div>
+            <h3 class="content-Heading font-josefin fw-medium">Architecture Design</h3>
+            <p class="content-desc font-inter fs-6 fw-normal">Fusce aliquet quam eget neque ultrices elementum felis id
+              arcu blandit sagittis.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="pt-120 pb-95 latest_Properties_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h2 class="font-josefin fs-1 fw-bold">Latest Properties Exploring the World</h2>
+        </div>
+        <div class="col-8">
+          <div class="property-tabsWrapper">
+            <ul class="d-flex justify-content-end list-unstyled">
+              <li class="property-tab">
+                <a href="#" class="fw-medium text-decoration-none active">Houses</a>
+              </li>
+              <li class="property-tab">
+                <a href="#" class="fw-medium text-decoration-none">Villas</a>
+              </li>
+              <li class="property-tab">
+                <a href="#" class="fw-medium text-decoration-none">Rental</a>
+              </li>
+              <li class="property-tab">
+                <a href="#" class="fw-medium text-decoration-none">Appartment</a>
+              </li>
+              <li class="property-tab">
+                <a href="#" class="fw-medium text-decoration-none">Condos</a>
+              </li>
+              <li class="property-tab">
+                <a href="#" class="fw-medium text-decoration-none">Commercial</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4 propert-img-wrapper">
+                <img src="/assets/images/propertiesThree.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="/assets/js/custom.js"></script>
+  <script type="text/javascript">
+    $('#header').load('header.html')
+  </script>
+</body>
+
+</html>
