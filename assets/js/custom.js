@@ -1,7 +1,4 @@
 jQuery(document).ready(function($){
-    // jQuery('#header').load('header.html')
-    // jQuery('#real-estate-header').load('header.html')
-
     $('.testimonial-slide_Wrapper').slick({
         centerMode: true,
         centerPadding: '450px',
@@ -32,31 +29,30 @@ jQuery(document).ready(function($){
             }
         ]
     });
-
 })
 
 // make navbar sticky
-document.addEventListener('DOMContentLoaded', function() {
-    // Place your code here
-    var navbar = document.getElementById('navbar');
-    var sticky = navbar.offsetTop;
-    
-    window.onscroll = function(){
-        if(window.pageYOffset >= sticky){
-            navbar.classList.add('sticky');
-        }
-        else{
-            navbar.classList.remove('sticky');
-        }
-    };
+$(window).scroll(function(){
+    if($(this).scrollTop() > 100){
+        $('.navbar').addClass('sticky')
+    } else{
+        $('.navbar').removeClass('sticky')
+    }
 });
 
+// make navlink active
+// var navLink = document.getElementsByClassName('nav-link')
+// document.querySelectorAll('nav-link').forEach(links =>{
+//     if(links.href === window.location.href){
+//         navLink.classList.add('active')
+//     }
 
+// })
 
 // js of tooltips
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+// const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+// const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 // function to add class on click of slider
 function toggleItem(elem) {
@@ -96,57 +92,57 @@ toggleItem(document.querySelectorAll('.property-slide'));
 // For more information, see greensock.com/docs/v3/Plugins/ScrollTrigger
 //  gsap.registerPlugin(ScrollTrigger);
 
-const tl = gsap.timeline({
-    scrollTrigger: {
-    trigger: ".downIcon-wrapper",
-    start: "top top",
-    end: "+=1000",
-    scrub: true,
-    pin: true,
-    markers: false,
-    pinSpacing: false
+// const tl = gsap.timeline({
+//     scrollTrigger: {
+//     trigger: ".downIcon-wrapper",
+//     start: "top top",
+//     end: "+=1000",
+//     scrub: true,
+//     pin: true,
+//     markers: false,
+//     pinSpacing: false
 
-    }
-});
+//     }
+// });
 
-function shouldRunAnimation() {
-    return window.innerWidth > 768; // Adjust this value according to your screen size threshold
-}
+// function shouldRunAnimation() {
+//     return window.innerWidth > 768; // Adjust this value according to your screen size threshold
+// }
 
-if(shouldRunAnimation()){
-    tl.to(".downArrow", {yPercent: 350, duration: 1})
-    tl.to(".downArrow", {rotation: 180, duration: 3})
+// if(shouldRunAnimation()){
+//     tl.to(".downArrow", {yPercent: 350, duration: 1})
+//     tl.to(".downArrow", {rotation: 180, duration: 3})
    
-}
-window.addEventListener('load', function() {
-    // Your GSAP animation code goes here
-    const realEstateImg = document.querySelector(".real_estate-img");
-    const rentalEstateImg = document.querySelector(".rental_estate-img");
+// }
+// window.addEventListener('load', function() {
+//     // Your GSAP animation code goes here
+//     const realEstateImg = document.querySelector(".real_estate-img");
+//     const rentalEstateImg = document.querySelector(".rental_estate-img");
   
-    gsap.fromTo(realEstateImg, {x: -900, duration: 6}, {
-      x: 0,
-      duration: 6,
-      onStart: function() {
-        // Add overflow hidden class when animation starts
-        document.body.classList.add('overflow-x-hidden');
-      },
-      onComplete: function() {
-        // Remove overflow hidden class when animation completes
-        document.body.classList.remove('overflow-x-hidden');
-      }
-    });
+//     gsap.fromTo(realEstateImg, {x: -900, duration: 6}, {
+//       x: 0,
+//       duration: 6,
+//       onStart: function() {
+//         // Add overflow hidden class when animation starts
+//         document.body.classList.add('overflow-x-hidden');
+//       },
+//       onComplete: function() {
+//         // Remove overflow hidden class when animation completes
+//         document.body.classList.remove('overflow-x-hidden');
+//       }
+//     });
   
-    gsap.fromTo(rentalEstateImg, {x: 900, duration: 6}, {
-      x: 0,
-      duration: 6,
-      onStart: function() {
-        // Add overflow hidden class when animation starts
-        document.body.classList.add('overflow-x-hidden');
-      },
-      onComplete: function() {
-        // Remove overflow hidden class when animation completes
-        document.body.classList.remove('overflow-x-hidden');
-      }
-    });
-  });
+//     gsap.fromTo(rentalEstateImg, {x: 900, duration: 6}, {
+//       x: 0,
+//       duration: 6,
+//       onStart: function() {
+//         // Add overflow hidden class when animation starts
+//         document.body.classList.add('overflow-x-hidden');
+//       },
+//       onComplete: function() {
+//         // Remove overflow hidden class when animation completes
+//         document.body.classList.remove('overflow-x-hidden');
+//       }
+//     });
+//   });
   

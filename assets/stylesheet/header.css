@@ -131,7 +131,7 @@ fill: var(--green);
     transform: translateY(-50%);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+.navbar-nav .nav-link.active{
     color: var(--green) !important;
     background-color: rgba(171, 148, 136, 0.06);
     border-radius: 10px;
@@ -252,7 +252,7 @@ fill: var(--green);
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 999;
     position: fixed !important;
     width: 100%;
     animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
